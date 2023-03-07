@@ -6583,7 +6583,7 @@ const generateQuote = () => {
   const { text, author } = quotes[num];
   const quotedText = addQuotes(text);
   quoteText.textContent = quotedText;
-  author ? (authorText.textContent = author) : "Anonymous";
+  authorText.textContent = author || "Anonymous";
 };
 
 generateQuote();
